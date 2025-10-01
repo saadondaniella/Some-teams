@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue;
+}
+
+.navigation {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
