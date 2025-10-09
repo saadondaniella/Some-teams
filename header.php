@@ -14,9 +14,12 @@
   <body>
 
   <nav>
-      
+       <a href="index.html" class="logo">
+    <img src="1.png" alt="Logotyp" height="80px" width="80px">
+  </a>
         <a href="index.php">Home</a>
         <a href="about.php">About</a>
+        <a href="team.php">Your favorit team</a>
       
   </nav>
 

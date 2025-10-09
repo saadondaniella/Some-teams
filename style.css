@@ -9,11 +9,25 @@ body {
 }
 
 header, nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   background-color: red;
   padding: 2rem 3rem;
   color: black; 
   font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 640px) {
+  header,
+  nav {
+    padding: 0.75rem 1rem;
+    font-size: 16px;
+    gap: 0.6rem;
+    flex-wrap: wrap;      
+  }
 }
 
 .site-header {
@@ -29,7 +43,7 @@ header, nav {
 }
 
 .site-header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: black;
   margin: 0.5rem 0;
 }
@@ -38,7 +52,6 @@ header, nav {
   font-size: 2rem;
   color: black;
   margin: 0.5rem 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .site-header p {
