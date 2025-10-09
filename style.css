@@ -1,24 +1,23 @@
-box-sizing: {content-box;
-width: 100%;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-     margin: 2rem;   
+    background-color: white;
+    margin: 0;  
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header, nav {
-  background-color: rgb(130, 199, 64);
-  padding: 1rem 2rem;
-  border-radius: 8px;
+  background-color: red;
+  padding: 2rem 3rem;
   color: black; 
+  font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .site-header {
   background-image: url("bild1.png");
-  border-radius: 8px;
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -29,33 +28,32 @@ header, nav {
   text-align: center;
 }
 
-h1 {
-    font-size: 4rem;
-    color: black;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.site-header h1 {
+  font-size: 4rem;
+  color: black;
+  margin: 0.5rem 0;
 }
 
-#firstpart {
-    font-size: 2rem;
-    color: black;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.site-header #firstpart {
+  font-size: 2rem;
+  color: black;
+  margin: 0.5rem 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.site-header p {
+  margin: 0.5rem 0;
 }
 
 h2 {
     font-size: 2rem;
+    text-align: center;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#uefa {
-  color: red;
-}
-
 p {
     color: black;
-    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -69,24 +67,27 @@ p {
 
 .teams-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;            
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;            
   margin-top: 2rem;
 }
 
 .team-box {
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem;
+  margin: 15px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 6px rgba(130, 199, 64);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   will-change: transform, box-shadow;
+  overflow: visible;
 }
 
 .team-box img {
-  display: block;
-  margin: 0 auto 0.5rem;
+ position: relative;
+  overflow: hidden;
 }
 
 .team-box:hover {
@@ -94,10 +95,113 @@ p {
   box-shadow: 0 8px 20px rgba(22, 109, 6, 0.18);
 }
 
+.uefa {
+position: absolute;
+  top: 8px;
+  left: 8px;         
+  display: inline-block;
+  color: white;           
+  background: red;       
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 3px solid blue;
+  border-radius: 5px;
+  transform: rotate(-10deg);
+  transform-origin: top left;
+  z-index: 2;
+}
+
 .footer {
-  background-color: rgb(130, 199, 64);
+  background-color: red;
   padding: 1rem 2rem;
-  border-radius: 8px;
   color: black; 
+  margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.about p {
+  color: black
+}
+
+.about h2 {
+  color: black
+}
+
+.about {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(255, 209, 209);
+  color: #333;
+  line-height: 1.6; 
+}
+ 
+.ending-box {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(255, 209, 209);
+  color: #333;
+  line-height: 1.6; 
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ending-box:hover {
+  background-color: blue;
+  color: white;
+}
+
+.ending-link { 
+text-decoration: none; 
+color: inherit; 
+display: block; }
+
+#favBox { 
+cursor: pointer; }
+
+.back-link {
+  display: inline-block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-box--narrow {
+  max-width: 640px;
+  margin: 50px;
+}
+
+.center-title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.team-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .6rem;
+  align-items: end;
+}
+
+.team-form label {
+  grid-column: 1 / -1;
+  font-weight: 600;
+}
+
+.team-input {
+  padding: .6rem .7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+

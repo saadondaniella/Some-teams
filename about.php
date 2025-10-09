@@ -13,11 +13,10 @@
   </nav>
 
 <div class="about">
-<h2>
-    Who is Daniella?
-</h2>
-<p>
-I was born in 1988, and from the very beginning I was a bubbly, creative soul.
+
+<h2><?='Who is Daniella?'?></h2>
+
+<p>I was born in 1988, and from the very beginning I was a bubbly, creative soul.
 As a child, I was always smiling, spreading joy everywhere I went.
 A fun fact? I couldn’t pronounce the letter S until I was five — so instead I filled the air 
 with lots of ttttttts!<br><br>
@@ -47,16 +46,18 @@ development. For me, this is not just another chapter, but the start of a whole 
 
 This is me — a mix of energy, imagination, and a lifelong passion for learning, creating, and sharing 
 joy with others.<br><br>
-See you guys on the web!<br><br>
+See you guys on the web!<br>
 
-Best regards<br><br>
-Daniella Saadon / Future fullstack developer.
-</p>
+Best regards<br>
+Daniella Saadon / Future fullstack developer.</p>
+
+<img src="IMG_4394.jpg" alt="fotoavdaniells" height="400px" width="350px">
+
 </div>
 
 <?php
   require __DIR__.'/footer.php';
-  ?>
-  
+?>
+
 </body>
 </html>
