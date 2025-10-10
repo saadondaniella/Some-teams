@@ -1,4 +1,4 @@
-# Some Teams ⚽️
+# Some Teams
 
 Detta projekt är en övning i **PHP** som går ut på att bygga en liten webbplats där data från en array (`data.php`) visas på sidan.  
 Projektet syftar till att träna på grundläggande PHP, versionshantering med Git och att publicera en enkel webbplats via one.com.
