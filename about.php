@@ -27,7 +27,7 @@ A fun fact? I couldn’t pronounce the letter S until I was five — so instead 
 with lots of ttttttts!<br><br>
 
 I grew up with an older sister, just two years ahead of me. We were inseparable best friends
- as kids, until school came along
+as kids, until school came along
 and suddenly our worlds were full of classmates and adventures.<br><br>
 
 Games, sports, and travel have always been a huge part of my life. I honestly can’t count 
