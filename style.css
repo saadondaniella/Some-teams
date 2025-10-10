@@ -30,7 +30,7 @@ nav a:hover {
 }
 
 .site-header {
-  background: linear-gradient(to right, #5678c6, #2e509e, #062876);
+  background: linear-gradient(to right, #0ef, #2e509e, #00113c);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -166,7 +166,7 @@ position: absolute;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .ending-box:hover {
-  background-color: #00113c;
+  background-color: #0ef;
   color: white;
 }
 
