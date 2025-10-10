@@ -9,11 +9,11 @@ $fun = null;
 $in_list = false;
 
 if ($q !== '') {
-  if ($lc === 'barcelona' || $lc === 'fc barcelona') {
+  if ($lc === 'barcelona') {
     $fun = "Visca Barça!  Det här laget har stil.";
   } elseif ($lc === 'real madrid') {
     $fun = "Hola Madrid! Vamos Vamos Vamos.";
-  } elseif ($lc === 'manchester city' || $lc === 'man city') {
+  } elseif ($lc === 'manchester city') {
     $fun = "MaanCheeest!  Maskiner på planen.";
   } elseif ($lc === 'liverpool') {
     $fun = "YNWA Gåshud i tunneln.";
@@ -38,7 +38,7 @@ if ($q !== '') {
         type="text"
         class="team-input"
         value="<?= htmlspecialchars($q) ?>"
-        placeholder="t.ex. Barcelona, Arsenal, Madrid"
+        placeholder="t.ex. Barcelona, Arsenal, Real madrid"
         >
         <button class="btn" type="submit">Go</button>
     </form>
@@ -54,7 +54,3 @@ if ($q !== '') {
         </div>
         <?php endif; ?>
     </div>
-    
-    <script>
-        document.getElementById('q')?.focus();
-        </script>
