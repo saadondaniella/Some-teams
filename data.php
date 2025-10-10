@@ -92,7 +92,7 @@ $teams = [
         ]
     ],
     'Benfica' => [
-        'league' => 'campeonato nacional de futebol feminino (Portugal)',
+        'league' => 'Campeonato nacional de futebol feminino (Portugal)',
         'uefa-coefficient-ranking' => 11,
         'city' => 'Lissabon',
         'url' => 'https://www.slbenfica.pt/en-us/futebol/feminino',
