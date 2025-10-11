@@ -44,37 +44,35 @@ if ($q !== '') {
   }
   ?>
 
-  
 <div class="team-box team-box--narrow">
-  <h2 class="center-title">Go on, tell me your favorite team</h2>
+    <h2 class="center-title">Go on, tell me your favorite team</h2>
   
   <form method="get" action="team.php" class="team-form">
     <label for="q">Team name</label>
-    <input
-    id="q"
-    name="q"
-    type="text"
-    class="team-input"
-    value="<?= htmlspecialchars($q) ?>"
-    placeholder="t.ex. Barcelona, Arsenal, Real madrid"
-    >
+      <input
+      id="q"
+      name="q"
+      type="text"
+      class="team-input"
+      value="<?= htmlspecialchars($q) ?>"
+      placeholder="t.ex. Barcelona, Arsenal, Real madrid">
     <button class="btn" type="submit">Go</button>
   </form>
-  
   
   <?php if ($q !== ''): ?>
     <div style="margin-top:1rem;">
       <p><?= htmlspecialchars($fun) ?></p>
       
-      <?php if ($in_list): ?>
-        <p> Finns i din lista! <a class="btn" href="team.php?name=<?= urlencode($q) ?>" </p>
-        
-        <?php endif; ?>
+  <?php if ($in_list): ?>
+      <p> Finns i din lista! <a class="btn" href="team.php?name=<?= urlencode($q) ?>" </p>
+  
+      <?php endif; ?>
       </div>
       <?php endif; ?>
 
-      <img class="team-img" src="pic-fotboll-woman.jpg" alt="fotboll-Women">
-    </div>
+    <img class="team-img" src="pic-fotboll-woman.jpg" alt="fotboll-Women">
+    
+  </div>
     
     <?php
     require __DIR__.'/footer.php';
