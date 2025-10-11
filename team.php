@@ -10,47 +10,72 @@ $in_list = false;
 
 if ($q !== '') {
   if ($lc === 'barcelona') {
-    $fun = "Visca Barça!  Det här laget har stil.";
+    $fun = "Vamos Barça! This team’s got style. FC Barcelona Femení – the team that scores more goals than you’ve got olives in your tapas!
+      FC Barcelona Femení is one of the best women’s teams in the world and has dominated European football in recent years.
+      They’re famous for their tiki-taka style – fast, technical, and beautifully creative (just like the men’s team).
+      Magnificent choice!";
   } elseif ($lc === 'real madrid') {
-    $fun = "Hola Madrid! Vamos Vamos Vamos.";
+    $fun = "¡Hola Madrid! This team has pure class and a champion’s mindset.
+      Real Madrid Femenino may be newer on the scene, but they’ve already proven they mean business.
+      With style, speed, and Spanish flair, they chase every point like it’s a trophy.
+      Splendid choice!";
   } elseif ($lc === 'manchester city') {
-    $fun = "MaanCheeest!  Maskiner på planen.";
+    $fun = "Blue power! Manchester City Women play football so sharp it could make Manchester forget about the rain.
+      Known for their smart passing game and attacking strength,
+      when City picks up the pace, not even the umbrellas can keep up.
+      Epic choice!";
   } elseif ($lc === 'liverpool') {
-    $fun = "YNWA Gåshud i tunneln.";
+    $fun = "You’ll Never Walk Alone – and you’ll definitely never go goalless.
+      Liverpool FC Women bring the same heart and fire you see at Anfield.
+      They mix passion, teamwork, and northern grit into something truly electric. Fantastic choice!";
   } elseif ($lc === 'arsenal') {
-    $fun = "YESS! Fina trianglar, fint spel.";
+    $fun = "North London pride! Arsenal Women play with class, tempo, and ruthless finishing.
+      One of England’s most decorated sides, setting the standard year after year.
+      Craft, composure, and that Gunners edge that turns half-chances into highlights.
+      Brilliant choice!";
   } elseif ($lc === 'wolfsburg') {
-    $fun = "Woff, Woff! fint spel.";
-  } else {
-    $fun = "Kul val din filur: {$q}! Det var nytt! aja bra lag är bra lag.";
+    $fun = "Wolfsburg Frauen – the team that devours points like it’s breakfast.
+      Disciplined, determined, and deadly in attack.
+      They’ve collected more titles than most clubs have training kits.
+      Legendary choice!";
+    } else {
+      $fun = "Hmm, {$q}? Bold move. Not on my list of favorites, but hey — can’t include every team";
+    }
   }
-}
-?>
+  ?>
 
+  
 <div class="team-box team-box--narrow">
-    <h2 class="center-title">Skriv ditt favoritlag</h2>
-    
-    <form method="get" action="team.php" class="team-form">
-        <label for="q">Team name</label>
-        <input
-        id="q"
-        name="q"
-        type="text"
-        class="team-input"
-        value="<?= htmlspecialchars($q) ?>"
-        placeholder="t.ex. Barcelona, Arsenal, Real madrid"
-        >
-        <button class="btn" type="submit">Go</button>
-    </form>
-    
-    <?php if ($q !== ''): ?>
-        <div style="margin-top:1rem;">
-            <p><?= htmlspecialchars($fun) ?></p>
-            
-            <?php if ($in_list): ?>
-                <p> Finns i din lista! <a class="btn" href="team.php?name=<?= urlencode($q) ?>" </p>
-            
-            <?php endif; ?>
-        </div>
+  <h2 class="center-title">Go on, tell me your favorite team</h2>
+  
+  <form method="get" action="team.php" class="team-form">
+    <label for="q">Team name</label>
+    <input
+    id="q"
+    name="q"
+    type="text"
+    class="team-input"
+    value="<?= htmlspecialchars($q) ?>"
+    placeholder="t.ex. Barcelona, Arsenal, Real madrid"
+    >
+    <button class="btn" type="submit">Go</button>
+  </form>
+  
+  
+  <?php if ($q !== ''): ?>
+    <div style="margin-top:1rem;">
+      <p><?= htmlspecialchars($fun) ?></p>
+      
+      <?php if ($in_list): ?>
+        <p> Finns i din lista! <a class="btn" href="team.php?name=<?= urlencode($q) ?>" </p>
+        
         <?php endif; ?>
+      </div>
+      <?php endif; ?>
+
+      <img class="team-img" src="pic-fotboll-woman.jpg" alt="fotboll-Women">
     </div>
+    
+    <?php
+    require __DIR__.'/footer.php';
+    ?>

@@ -6,7 +6,7 @@ require __DIR__.'/header.php';
 <main>
 
 <div class="site-header">
-    <h1><?='Lets keep up with some woman and their preformance in fotball'?></h1> 
+    <h1><?="Let's keep up with some woman and their preformance in fotball"?></h1> 
     <h2 id="firstpart"><?='Who is the champions?'?></h2>
     <p><?='Lets rank them all'?></p>
 </div>
@@ -39,7 +39,7 @@ require __DIR__.'/header.php';
 
 <a href="team.php" class="ending-link">
   <div class="ending-box" id="favBox">
-  <h2><?='What is your favorite team?'?></h2></a>
+  <h2><?='So… what’s your favorite team?'?></h2></a>
 </div>
 
 </main>

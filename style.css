@@ -5,7 +5,7 @@
 body {
   background-color: white;
   margin: 0;  
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header, nav {
@@ -26,7 +26,7 @@ nav a {
 }
 
 nav a:hover {
-  color: lightgray;
+  color: white;
 }
 
 .site-header {
@@ -60,13 +60,13 @@ nav a:hover {
 h2 {
   font-size: 2rem;
   text-align: center;
-  color: black;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #00113c;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {
-  color: white
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #00113c;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .team-logo {
@@ -132,11 +132,11 @@ position: absolute;
 }
 
 .about p {
-  color: black
+  color: #00113c;
 }
 
 .about h2 {
-  color: black
+  color: #00113c;
 }
 
 .about {
@@ -163,7 +163,7 @@ position: absolute;
   font-size: 2rem;
   text-align: center;
   color: black;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ending-box:hover {
   background-color: #0ef;
@@ -186,13 +186,15 @@ cursor: pointer; }
 }
 
 .team-box--narrow {
-  max-width: 640px;
+  position:fixed
+  max-width 640px;
   margin: 50px;
 }
 
 .center-title {
   text-align: center;
   margin-top: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .team-form {
@@ -215,3 +217,9 @@ cursor: pointer; }
   width: 100%;
 }
 
+.team-img {
+  display: block;
+  max-width: 300px;
+  margin: 30px auto;
+  border-radius: 8px;
+}
