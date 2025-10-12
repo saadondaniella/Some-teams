@@ -3,12 +3,12 @@ require __DIR__ . '/header.php';
 
 $teams = require __DIR__ . '/data.php';
 
-$q = isset($_GET['q']) ? trim($_GET['q']) : '';
-$lc = mb_strtolower($q);
+$i = isset($_GET['i']) ? trim($_GET['i']) : '';
+$lc = mb_strtolower($i);
 $fun = null;
 $in_list = false;
 
-if ($q !== '') {
+if ($i !== '') {
   if ($lc === 'barcelona') {
     $fun = "Vamos Barça! This team’s got style. FC Barcelona Femení – the team that scores more goals than you’ve got olives in your tapas!
       FC Barcelona Femení is one of the best women’s teams in the world and has dominated European football in recent years.
@@ -39,7 +39,7 @@ if ($q !== '') {
       They’ve collected more titles than most clubs have training kits.
       Legendary choice!";
     } else {
-      $fun = "Hmm, {$q}? Bold move. Not on my list of favorites, but hey — can’t include every team";
+      $fun = "Hmm, {$i}? Bold move. Not on my list of favorites, but hey — can’t include every team";
     }
   }
   ?>
@@ -48,23 +48,23 @@ if ($q !== '') {
     <h2 class="center-title">Go on, tell me your favorite team</h2>
   
   <form method="get" action="team.php" class="team-form">
-    <label for="q">Team name</label>
+    <label for="i">Team name</label>
       <input
-      id="q"
-      name="q"
+      id="i"
+      name="i"
       type="text"
       class="team-input"
-      value="<?= htmlspecialchars($q) ?>"
+      value="<?= htmlspecialchars($i) ?>"
       placeholder="t.ex. Barcelona, Arsenal, Real madrid">
     <button class="btn" type="submit">Go</button>
   </form>
   
-  <?php if ($q !== ''): ?>
+  <?php if ($i !== ''): ?>
     <div style="margin-top:1rem;">
       <p><?= htmlspecialchars($fun) ?></p>
       
   <?php if ($in_list): ?>
-      <p> Finns i din lista! <a class="btn" href="team.php?name=<?= urlencode($q) ?>" </p>
+      <p> Finns i din lista! <a class="btn" href="team.php?name=<?= urlencode($i) ?>" </p>
   
       <?php endif; ?>
       </div>
