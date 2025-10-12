@@ -1,12 +1,9 @@
 <?php
 require __DIR__ . '/header.php';
 
-$teams = require __DIR__ . '/data.php';
-
 $i = isset($_GET['i']) ? trim($_GET['i']) : '';
 $lc = mb_strtolower($i);
-$fun = null;
-$in_list = false;
+$fun = '';
 
 if ($i !== '') {
   if ($lc === 'barcelona') {
@@ -63,12 +60,9 @@ if ($i !== '') {
     <div style="margin-top:1rem;">
       <p><?= htmlspecialchars($fun) ?></p>
       
-  <?php if ($in_list): ?>
-      <p> Finns i din lista! <a class="btn" href="team.php?name=<?= urlencode($i) ?>" </p>
   
       <?php endif; ?>
       </div>
-      <?php endif; ?>
 
     <img class="team-img" src="pic-fotboll-woman.jpg" alt="fotboll-Women">
     
